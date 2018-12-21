@@ -1,0 +1,6 @@
+\documentclass{article}
+\usepackage{qrcode}
+\begin{document}
+This is a qrcode for Google HK.
+\qrcode{https://www.google.com.hk/}
+\end{document}

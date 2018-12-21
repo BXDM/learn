@@ -1,0 +1,317 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% 目的 : LaTeX+CJK中文论文模板            %%
+%% 文件 : Template4CJK.tex        %%
+%% 日期 : 10-01-2008              %%
+%% 整理 : 于江生                                               %%
+%% 系统 : FreeBSD+teTeX           %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iffalse                             % 块注释
+如果要注释一块文字，用\iffalse ... \fi 界定住要
+注释的文字。特别提醒：以下设置的次序不能乱，否则
+会引发冲突，影响到编译是否成功。
+\fi
+\documentclass[a4paper,11pt,         % A4纸
+               twoside,              % 双面
+%              openany               % 新章节在偶数页开始
+               ]{article}
+
+%%%%%%%%%% 版面控制 %%%%%%%%%%
+\usepackage{indentfirst}             % 首行缩进
+\iffalse
+\usepackage[%paperwidth=18.4cm, paperheight= 26cm,
+            body={14.6true cm,22true cm},
+            twosideshift=0 pt,
+            %headheight=1.0true cm
+            ]{geometry}
+\fi
+\usepackage[perpage,symbol]{footmisc}% 脚注控制
+\usepackage[sf]{titlesec}            % 控制标题
+\usepackage{titletoc}                % 控制目录
+\usepackage{fancyhdr}                % 页眉页脚
+\usepackage{type1cm}                 % 控制字体大小
+\usepackage{indentfirst}             % 首行缩进
+\usepackage{makeidx}                 % 建立索引
+\usepackage{textcomp}                % 千分号等特殊符号
+\usepackage{layouts}                 % 打印当前页面格式
+\usepackage{bbding}                  % 一些特殊符号
+\usepackage{cite}                    % 支持引用
+\usepackage{color,xcolor}            % 支持彩色文本、底色、文本框等
+\usepackage{listings}                % 粘贴源代码
+\lstloadlanguages{}                  % 所要粘贴代码的编程语言
+\lstset{language=,tabsize=4, keepspaces=true,
+    xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    backgroundcolor=\color{lightgray},    % 定义背景颜色
+    frame=none,                      % 表示不要边框
+    keywordstyle=\color{blue}\bfseries,
+    breakindent=22pt,
+    numbers=left,stepnumber=1,numberstyle=\tiny,
+    basicstyle=\footnotesize,
+    showspaces=false,
+    flexiblecolumns=true,
+    breaklines=true, breakautoindent=true,breakindent=4em,
+    escapeinside={/*@}{@*/}
+}
+
+%%%%%%%%%% 字体支持 %%%%%%%%%%%%
+%\usepackage{ccmap}                  % 使pdfLatex生成的文件支持复制等
+\usepackage{CJK,CJKnumb,CJKulem}     % 中文支持
+\usepackage{times}     % 包括 Times Roman + Helvetica + Courier
+%\usepackage{palatino} % 包括 Palatino + Helvetica + Courier
+%\usepackage{newcent}  % 包括 New Century Schoolbook + Avant Garde + Courier
+%\usepackage{bookman}  % 包括 Bookman + Avant Garde + Courier
+
+%%%%%%%%%% 数学符号公式 %%%%%%%%%%
+\usepackage{latexsym}
+\usepackage{amsmath}                 % AMS LaTeX宏包
+\usepackage{amssymb}                 % 用来排版漂亮的数学公式
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}                % 英文花体字体
+\usepackage{bm}                      % 数学公式中的黑斜体
+\usepackage{relsize}                 % 调整公式字体大小：\mathsmaller, \mathlarger
+\usepackage{caption2}                % 浮动图形和表格标题样式
+
+%%%%%%%%%% 图形支持宏包 %%%%%%%%%%
+\ifx\pdfoutput\undefined             % 用latex或pdflatex编译
+  \usepackage[dvips]{graphicx}       % 将eps格式的图片放在figures目录下
+\else                                % 在setup/format.tex中用以下命令注明路径：
+  \usepackage[pdftex]{graphicx}      % \graphicspath{{figures/}}
+\fi
+%\usepackage{subfigure}
+\usepackage{epsfig}                  % 支持eps图像
+%\usepackage{picinpar}               % 图表和文字混排宏包
+%\usepackage[verbose]{wrapfig}       % 图表和文字混排宏包
+%\usepackage{eso-pic}                % 向文档的部分页加n副图形, 可实现水印效果
+%\usepackage{eepic}                  % 扩展的绘图支持
+%\usepackage{curves}                 % 绘制复杂曲线
+%\usepackage{texdraw}                % 增强的绘图工具
+%\usepackage{treedoc}                % 树形图绘制
+%\usepackage{pictex}                 % 可以画任意的图形
+%\usepackage{hyperref}
+
+%%%%%%%%%% 一些距离设置 %%%%%%%%%%%
+\setlength{\floatsep}{10pt plus 3pt minus 2pt}       % 图形之间或图形与正文之间的距离
+\setlength{\abovecaptionskip}{2pt plus 1pt minus 1pt}% 图形中的图与标题之间的距离
+\setlength{\belowcaptionskip}{3pt plus 1pt minus 2pt}% 表格中的表与标题之间的距
+
+%%%%%%%%%% 纸张和页面的大小 %%%%%%%%%%
+%\paperwidth   20 true cm            % 纸张宽
+%\paperheight  30 true cm            % 纸张高
+%\textwidth    10 true cm            % 正文宽
+%\textheight   20 true cm            % 正文高
+%\headheight      14pt               % 页眉高
+%\headsep         16pt               % 页眉距离
+%\footskip        27pt               % 页脚距离
+%\marginparsep    10pt               % 边注区距离
+%\marginparwidth  100pt              % 边注区宽
+\makeindex                           % 生成索引
+\pagestyle{fancy}                    % 页眉页脚风格
+\fancyhf{}                           % 清空当前页眉页脚的默认设置
+
+%%%%%%%%%% 导入中文环境 %%%%%%%%%%
+\AtBeginDocument{\begin{CJK*}{GBK}{song} % 不计中文的空格
+\CJKindent                           % 首行缩进两个汉字
+\sloppy\CJKspace                     % 中英文混排的断行
+\CJKtilde                            % 重新定义~，用~隔开中英文
+\CJKcaption{GB}                      % 章节标题的中文化
+}
+\AtEndDocument{\end{CJK*}}
+
+%%%%%%%%%% 正文 %%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%% 一些新定义 %%%%%%%%%%
+\newcommand{\song}{\CJKfamily{song}} % 宋体
+\newcommand{\hei}{\CJKfamily{hei}}   % 黑体
+\newcommand{\fs}{\CJKfamily{fs}}     % 仿宋
+\newcommand{\kai}{\CJKfamily{kai}}   % 楷体
+
+%%%%%%%%%% 定理类环境的定义 %%%%%%%%%%
+%% 必须在导入中文环境之后
+\newtheorem{example}{例}             % 整体编号
+\newtheorem{algorithm}{算法}
+\newtheorem{theorem}{定理}[section]  % 按 section 编号
+\newtheorem{definition}{定义}
+\newtheorem{axiom}{公理}
+\newtheorem{property}{性质}
+\newtheorem{proposition}{命题}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem{remark}{注解}
+\newtheorem{condition}{条件}
+\newtheorem{conclusion}{结论}
+\newtheorem{assumption}{假设}
+
+%%%%%%%%%% 一些重定义 %%%%%%%%%%
+%% 必须在导入中文环境之后
+\renewcommand{\contentsname}{目录}     % 将Contents改为目录
+\renewcommand{\abstractname}{摘\ \ 要} % 将Abstract改为摘要
+\renewcommand{\refname}{参考文献}      % 将References改为参考文献
+\renewcommand{\indexname}{索引}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\appendixname}{附录}
+\renewcommand{\proofname}{\hei 证明}
+\renewcommand{\algorithm}{\hei 算法}
+
+%%%%%%%%%% 重定义字号命令 %%%%%%%%%%
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}       % 一号, 1.4倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}       % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}      % 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}     % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}       % 四号, 1.5倍行距
+\newcommand{\bansi}{\fontsize{13pt}{19.5pt}\selectfont}     % 半四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}      % 小四, 1.5倍行距
+\newcommand{\dawu}{\fontsize{11pt}{11pt}\selectfont}        % 大五, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % 五号, 单倍行距
+
+%%%%%%%%%% 页眉和页脚的设置 %%%%%%%%%%
+\lhead{一个~\LaTeX+CJK~的简单模板}
+\rhead{\TeX~爱好者}
+\lfoot{用~\LaTeX~写科技论文}
+\rfoot{~\thepage~}
+
+%%%%%%%%%% 论文标题、作者等 %%%%%%%%%%
+\title{用~\LaTeX~写科技论文            % 论文标题
+      \thanks{这是一个为初学者写的~\LaTeX+CJK~论文模板，未经作者允许可以
+      随意下载使用并修改传播，目的是让更多的人迅速上手用~\LaTeX~系统写作。}
+       }
+\author{于江生\\                     % 作者
+        北京大学计算机系}
+\date{2008年10月01日}                % 日期
+\maketitle                           % 生成标题
+\tableofcontents                     % 插入目录
+\thispagestyle{empty}                % 首页无页眉页脚
+
+\begin{abstract}
+\noindent % 不缩进
+这是一个简单的~\LaTeX+CJK~的模板，为~\TeX~的初学者提供便利上手的参照。
+该模板在FreeBSD+te\TeX下编译通过，适合在UNIX下工作的朋友。
+从一个简单的模板出发，不断地提升对~\TeX~的认识，培养良好的写作风格。
+网上有大量的资料，我推荐~\LaTeX~编辑部：http://zzg34b.w3.c361.com/index.htm，
+那里能找到国内外许多期刊的模板和一些高校博/硕士论文的模板。祝玩儿得开心！
+\end{abstract}
+
+\PencilRightUp % 一些可爱的图标，需要bbding宏包的支持
+公元~1974~年，ACM~图灵奖授予了~Standford~大学教授\index{Donald E. Knuth}~Donald E. Knuth~（高德纳），
+表彰他在算法和程序语言设计等多方面杰出的成就。他的巨著~The Art of Computer Programming~令人震撼，
+感兴趣的读者可以访问他的主页~http://www-cs-faculty.stanford.edu/\~{}knuth/index.html。
+另外，Knuth~的突出贡献还包括\index{\TeX系统}~\TeX~系统，毫不夸张地评价，
+\TeX~给科技论文的排版带来了一场革命。
+%%%%%%%%%% section %%%%%%%%%%
+\section{编辑数学公式}
+\indent   % 恢复缩进
+\TeX~有诸如AMS\TeX、\LaTeX~等宏库。在~FreeBSD~下，缺省的宏库是~te\TeX。
+Knuth~用~\$~符号界定数学公式，意味着每个好的公式都是无价之宝。
+有了~\TeX~系统，输入数学公式变得简单愉快。如，
+\begin{theorem}[L\'{e}vy\index{L\'{e}vy~定理}]
+令~$F(x),\varphi(t)$~分别为随机变量~$X$~的分布函数和特征函数。
+假定~$F(x)$~在~$a+h$~和~$a-h (h>0)$~处连续，则有
+\begin{eqnarray}
+  \label{Levy theorem}  % 方程的标记可以是专有名词
+F(a+h)-F(a-h)&=&\lim_{T\rightarrow\infty} \frac{1}{\pi}\int^{T}_{-T} \frac{\sin ht}{t} e^{-ita} \varphi(t)dt
+\end{eqnarray}
+\end{theorem}
+\begin{proof}
+  从略。感兴趣的读者可以参考……。
+\end{proof}
+L\'{e}vy~定理在分布函数和特征函数之间搭建了一座桥梁。由公式~(\ref{Levy theorem})~可得
+\begin{eqnarray}
+  \label{DensityCharacteristic}   % 自定义的标记
+  f(x)&=&\frac{1}{2\pi}\int^{+\infty}_{-\infty} e^{-itx}\varphi(t)dt
+\end{eqnarray}
+\begin{proof}
+由~(\ref{Levy theorem})~和~Lebesgue~定理，我们有
+\begin{eqnarray}
+  \frac{F(x+\Delta x)-F(x)}{\Delta x}&=&\frac{1}{2\pi} \int^{+\infty}_{-\infty}
+\frac{\sin(t\Delta x/2)}{t\Delta x/2} e^{-it(x+\Delta x/2)} \varphi(t) dt\nonumber\\
+  f(x)&=&\frac{1}{2\pi} \int^{+\infty}_{-\infty} \lim_{\Delta x\rightarrow 0}
+\frac{\sin(t\Delta x/2)}{t\Delta x/2} e^{-it(x+\Delta x/2)} \varphi(t) dt\nonumber\\
+  &=&\frac{1}{2\pi}\int^{+\infty}_{-\infty} e^{-itx}\varphi(t)dt\nonumber
+\end{eqnarray}
+我们知道特征函数的定义是
+\begin{eqnarray}
+  \label{section1:characteristic}   % 标记中注明了章节号
+  \varphi(t)&=& E(e^{itX})\nonumber\\
+            &=& \int^{+\infty}_{-\infty} e^{itx} f(x)dx
+\end{eqnarray}
+对比~(\ref{DensityCharacteristic})~和~(\ref{section1:characteristic})~可见，
+密度函数和特征函数之间的关系非常巧妙。
+\end{proof}
+\HandRight 在~\TeX~环境里，数学公式的表达是很自然的，绝大多数命令就是英文的数学
+专有名词或它们的缩写，如果你以前读过英文的数学文献，记忆这些命令是不难的。
+手头有个命令快速寻查表是很方便的，
+我用的是~Hypertext Help with \LaTeX，网上可以搜到，是免费的。
+%%%%%%%%%% section %%%%%%%%%%
+\section{符号、字体、颜色等}
+\begin{itemize}
+  \item 特殊字符：\# \$ \% \^{} \& \_ \{ \} \~{} $\backslash \cdots$
+  \item 中文字体：{\song 宋体} {\kai 楷体} {\hei 黑体} {\fs 仿宋}
+  \item 字体大小：{\tiny tiny} {\small small} {\normalsize normalsize}
+                  {\large large} {\Large Large} {\huge huge} {\Huge Huge}
+  \item 汉字大小：{\wuhao 五号} {\dawu 大五} {\xiaosi 小四} {\sihao 四号}
+                  {\xiaosan 小三} {\sanhao 三号} {\xiaoer 小二} {\erhao 二号} {\yihao 一号}
+  \item 各种颜色：{\color{red} 红色} {\color{yellow} 黄色} {\color{blue} 蓝色}
+                  {\color{magenta} 洋红} {\color{cyan} 蓝绿}
+\end{itemize}
+%%%%%%%%%%% section %%%%%%%%%%
+\section{图形表格等浮动对象}
+
+\index{贝叶斯方法}贝叶斯方法~\cite{Gelman}~主要用于小样本数据分析，它利用参数先验分布和
+后验分布之差异进行统计推断，其一般步骤是：
+\begin{enumerate}
+  \item 构建概率模型，包括参数的先验分布。
+  \item 给定观察数据，计算参数的后验分布。
+  \item 分析模型的效果，如有必要，回到第一步。
+\end{enumerate}
+下面，我们给一个表格的例子：
+\begin{center}
+\begin{table}[!h]     % 强制在原位显示表格
+\centering
+\caption{二维随机向量$(X,Y)$的边缘分布}
+\begin{tabular}{l|ccccc|c}
+  $_X$\hspace{3mm} $^Y$&$y_1$&$y_2$&$\cdots$&$y_j$&$\cdots$\\
+\hline
+$x_1$   &$p_{11}$&$p_{12}$&$\cdots$&$p_{1j}$&$\cdots$&$p_{1\cdot}$\\
+$x_2$   &$p_{21}$&$p_{22}$&$\cdots$&$p_{2j}$&$\cdots$&$p_{2\cdot}$\\
+$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$ \\
+$x_i$   &$p_{i1}$&$p_{i2}$&$\cdots$&$p_{ij}$&$\cdots$&$p_{i\cdot}$\\
+$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$&$\vdots$ \\
+\hline
+   &$p_{\cdot 1}$&$p_{\cdot 2}$&$\cdots$&$p_{\cdot j}$&$\cdots$&1
+\label{marginal distribution}
+\end{tabular}
+\end{table}
+\end{center}
+在表~\ref{marginal distribution}中，$p_{\cdot j}=\sum\limits_i p_{ij}$，类似地，$ p_{i\cdot}=\sum\limits_j p_{ij}$。
+% 插入一个图片
+%\includegraphics[width=50mm,height=40mm]{figures/demo.eps}
+
+%%%%%%%%%% section %%%%%%%%%%
+\section{生成索引}
+键入命令：makeindex  文件名。\newline
+\indent 譬如对这个模板，生成~Template4CJK.ind~的过程如下。
+\begin{lstlisting}
+$ makeindex Template4CJK
+This is makeindex, version 2.14 [02-Oct-2002] (kpathsea + Thai support).
+Scanning input file Template4CJK.idx....done (4 entries accepted, 0 rejected).
+Sorting entries....done (9 comparisons).
+Generating output file Template4CJK.ind....done (18 lines written, 0 warnings).
+Output written in Template4CJK.ind.
+Transcript written in Template4CJK.ilg.
+\end{lstlisting}
+
+\printindex % 打印出索引名及其所在页码，即那些\index{索引名}
+%%%%%%%%%% 参考文献 %%%%%%%%%%
+\begin{thebibliography}{}
+\bibitem[Gelman et~al., 2004]{Gelman} Gelman, A., Carlin, J.~B., Stern, H.~S.  \& Rubin, D.~B. (2004)
+Bayesian Data Analysis (Second Edition).  \newblock Chapman \& Hall/CRC.
+\end{thebibliography}
+\clearpage
+\end{document}
+%%%%%%%%%% 结束 %%%%%%%%%%

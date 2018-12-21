@@ -1,0 +1,1 @@
+#define INTEGER(d) printf("%4d\n",d)

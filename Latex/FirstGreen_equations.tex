@@ -1,0 +1,36 @@
+\documentclass[UTF8]{ctexart}       %引入向入中文库
+\usepackage{amsmath}    %bigtriangledown所需要使用到的数学公式宏
+\usepackage{color}      %调用颜色包
+\author{北巷的猫}
+\title{位场理论}
+\begin{document}
+\maketitle      %生成标题
+
+1、格林（green）第一公式
+\begin{align*}      %公式环境
+&\quad\iint_\Omega u\left(
+\frac{\partial^2 \nu}{\partial x^2}
++\frac{\partial^2 \nu}{\partial y^2}
++\frac{\partial^2 \nu}{\partial z^2} \right)
+\mathrm{d}x\mathrm{d}y\mathrm{d}z \\
+& =\oint_\Sigma u \left(
+\frac{\partial \nu}{\partial x}\cos \alpha
++\frac{\partial \nu}{\partial y}\cos\beta
++\frac{\partial \nu}{\partial z}\cos\gamma
+\right)\mathrm{d}S \\
+& -\iiint_\Omega\left(\frac{\partial u}{\partial x}\frac{\partial \nu}{\partial x}
++\frac{\partial u}{\partial y}\frac{\partial\nu}{\partial y}+
+\frac{\partial u}{\partial z}\frac{\partial \nu}{\partial z} \right)
+\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\end{align*}
+其中$\Sigma$是整个$\Omega$边界面的外侧
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,7 +1,0 @@
-\documentclass[UTF8]{ctexart}
-\author{My Name}
-\title{potential field}
-\begin{document}
-%\maketitle
-hello, world，北巷的猫 % This is comment
-\end{document}

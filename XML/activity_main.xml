@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<linearlayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_hight = "match_parent"
+	android:orientation = "vertical">
+
+	<textview
+		android:layout_width = "match_parent"
+		android:layout_hight = "match_parent"
+		android:gravity = "center"
+		android:text = "@string/title"
+		android:textsize = "20sp"/>
+
+<linearlayout
+	android:layout_width = "match_parent"
+	android:layout_hight = "wrap_parent"
+	android:orientation = "horizontal"> 	<!--orientatanion	方向		horizontal	水平-->
+
+		<textview
+			android:layout_width = "wrap_parent"
+			android:layout_hight = "wrap_parent"
+			android:text = "username"
+			android:textsize = "15sp"/>
+		<edittext
+			android:layout_width = "match_parent"
+			android:layout_hight = :"wrap_parent"/>
+</linearlayout>
+
+
+

@@ -1,0 +1,4 @@
+\documentclass[24pt]{article}
+\begin{document}
+$$f(x) = \frac{partial y}{partial x}$$
+\end{document} 

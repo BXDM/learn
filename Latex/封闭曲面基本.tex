@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{amsmath,esint}
+
+\newcommand*\VF[1]{\mathbf{#1}}
+\newcommand*\dif{\mathop{}\!\mathrm{d}}
+
+\begin{document}
+
+\begin{align*}
+  \iiint\limits_V (\nabla \cdot \VF{F}) \dif V
+  &= \oiint\limits_{S(V)} \VF{F} \cdot \hat{\VF{n}} \dif S\\
+  \iiint\limits_V (\nabla \times \VF{F}) \dif V
+  &= \oiint \hat{\VF{n}} \times \VF{F} \dif S
+\end{align*}
+
+
+
+
+
+\begin{align*}
+  \iiint_{V} (\nabla \cdot \VF{F}) \dif V
+  &= \oiint_{S(V)} \VF{F} \cdot \hat{\VF{n}} \dif S\\
+  \iiint_{V} (\nabla \times \VF{F}) \dif V
+  &= \oiint \hat{\VF{n}} \times \VF{F} \dif S
+\end{align*}
+
+
+\begin{align*}
+  \iiint\limits_V(\nabla \cdot \mathbf{F}) dV
+      & = \oiint \limits_{S(V)} \mathbf{F \cdot \hat{n}} dS \\
+  \iiint\limits_V(\nabla \times \mathbf{F}) dV
+      & = \oiint \limits_{S(V)} \mathbf{\hat{n} \times F} dS \\
+  \iiint\limits_V(\nabla f) dV
+      & = \oiint\limits_{S(V)}\mathbf{\hat{n}}f dS
+\end{align*}
+
+
+\end{document} 

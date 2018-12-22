@@ -1,11 +1,11 @@
 /* c1-1.c C 语言的第一个程序*/
 
 #include <stdio.h>
-int main( )
+int main()
 {
-	printf(" *\n");
-	printf(" ***\n");
-	printf("*****\n");
-	return 0;
+	int i,p = 1;
+	for(i=1;i<9;i++)
+		p = p+i;
+	printf("%d\n",i);
 }
 

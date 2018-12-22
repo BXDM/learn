@@ -1,0 +1,10 @@
+@echo off
+ren *.ico icon.ico
+echo [.ShellClassInfo]>desktop.ini
+echo IconResource=icon.ico,0>>desktop.ini
+echo iconindex=0>>desktop.ini
+echo 北巷的猫>>desktop.ini
+attrib desktop.ini +h +s +r
+attrib icon.ico +h
+echo 完成......
+pause

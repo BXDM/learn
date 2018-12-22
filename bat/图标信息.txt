@@ -1,0 +1,3 @@
+[.ShellClassInfo]
+IconResource=icon.ico,0
+iconindex=0

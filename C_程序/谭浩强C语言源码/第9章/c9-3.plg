@@ -1,0 +1,25 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: c9-3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP7C17.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/c9-3.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\c语言程序设计\清华课件\481447 C5课件源程序\C5源程序(17.9)\第9章\c9-3.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP7C17.tmp" 
+<h3>Output Window</h3>
+Compiling...
+c9-3.cpp
+
+
+
+<h3>Results</h3>
+c9-3.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

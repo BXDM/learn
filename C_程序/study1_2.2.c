@@ -1,21 +1,21 @@
-//用while计算输入数字的阶乘
-//北巷的猫 2018.12.22
+锘//脫脙while录脝脣茫脢盲脠毛脢媒脳脰碌脛陆脳鲁脣
+//卤卤脧茂碌脛脙篓 2018.12.22
 #include<stdio.h>
 void main()
 {
-	float fac=1;	//定义最终运算结果为浮点型
+	float fac=1;	//露篓脪氓脳卯脰脮脭脣脣茫陆谩鹿没脦陋赂隆碌茫脨脥
 	int i = 1,n;
 	printf("please inpute a nimber >=0\n");
 	scanf("%d",&n);
 	if(n == 0 || n == 1){
 		printf("factorial is %d\n",1);
-		return 0;	//函数到此结束，并返回函数值 0
+		return 0;	//潞炉脢媒碌陆麓脣陆谩脢酶拢卢虏垄路碌禄脴潞炉脢媒脰碌 0
 	}
 	while(n > 0){
 		fac = fac*n;
 		n--;
 	}
-	printf("factorial is %.2f\n",fac);	//	.2f 表示输出的位数为2为，其中的 . 不能省略
+	printf("factorial is %.2f\n",fac);	//	.2f 卤铆脢戮脢盲鲁枚碌脛脦禄脢媒脦陋2脦陋拢卢脝盲脰脨碌脛 . 虏禄脛脺脢隆脗脭
 }
 
-/*更改方案：用 n 参加计算，每次是的 n 的值减小 1*/
+/*赂眉赂脛路陆掳赂拢潞脫脙 n 虏脦录脫录脝脣茫拢卢脙驴麓脦脢脟碌脛 n 碌脛脰碌录玫脨隆 1*/

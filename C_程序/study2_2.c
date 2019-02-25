@@ -9,10 +9,9 @@ int main()
 		a[i] = i;
 	}
 	for(i = 9;i>0;i--)		//如果里面的条件改为i<10呢？
-	{
-		printf("  %d\n",a[i]);
-		// printf("%d\n");
-	}
+		printf(" %d",a[i]);
+	printf("\n");
+	
 
 	return 0;
 }

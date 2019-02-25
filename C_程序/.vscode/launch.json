@@ -1,0 +1,20 @@
+{
+    "name": "(gdb) Launch",
+   "type": "cppdbg",
+    "request": "launch",
+   "program": "${workspaceFolder}/a.out",  //此处修改，运行目录下编译后生成的a.out文件
+   "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": true,
+          "MIMode": "gdb",
+          "preLaunchTask": "c_pre_build",    //添加此条，配置在运行前进行编译，引号中的名字随便取
+ "setupCommands": [
+                 {
+                  "description": "Enable pretty-printing for gdb",
+                   "text": "-enable-pretty-printing",
+                   "ignoreFailures": true
+                 }]
+ }
+ 

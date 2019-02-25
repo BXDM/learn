@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 
-import requests
-import re
+import requests     #导入网络模块
+import re           #字符串处理
 import os
-from scrapy.selector import Selector
+from scrapy.selector import     
 
 
-headers = {
+headers = {     #伪装成浏览器的正常访问，防止网站反爬虫
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
 }
 
 class GetSexGirl(object):
 
     # 获取所有的url
-    def get_all_urls(self):
+    def get_all_urls(self):     #
         urls_list = []
         for i in range(1,82):
             url = "http://www.mzitu.com/xinggan/page/{0}".format(i)

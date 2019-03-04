@@ -1,0 +1,10 @@
+ditto
+
+打开面板	Ctrl + `
+打开面板，点击右键弹出菜单
+合并粘贴	弹出窗口中，按住Shift或Ctrl再点击鼠标左键
+shift+ enter	粘贴纯文本
+
+
+
+flashpaste

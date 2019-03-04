@@ -1,0 +1,29 @@
+Windows Troubleshooting: Error 0xC00000BE on Application Start
+Issue description
+You try to start an application in Windows and get the error message that the application cannot start due to error 0xc00000be:
+
+
+添加目录下的dll环境变量
+
+
+https://social.technet.microsoft.com/wiki/contents/articles/26421.windows-troubleshooting-error-0xc00000be-on-application-start.aspx
+
+Resolution
+One of the reasons for this error can be that the application cannot find a DLL it is looking for.
+
+Applications that use functions from DLL's have a search order on how to locate those linked DLLs, for details see http://msdn.microsoft.com/en-us/library/windows/desktop/ms682586(v=vs.85).aspx Jump ).
+
+One of the methods to locate a DLL is checking the locations entered in the PATH environment variable. See http://technet.microsoft.com/en-us/library/bb726962.aspx Jump how to configure environment variables in Windows.
+
+If this PATH variable contains an unreachable path, for example an no longer existing UNC path, entries behind that path no longer seem to get searched.
+
+So if the DLL needed by the application is in a location behind the inaccessible path, you will see the error 0xc00000be.
+
+To fix it, change the order of the path entries (in case the location is not accessible all the time) so that potential inaccessible paths are in the end or remove them if they are permanently unavailable.
+
+ 
+
+
+https://stackoverflow.com/questions/33158326/opencv-in-codeblocks-the-application-was-unable-to-start-correctly-0xc00000b
+
+https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55

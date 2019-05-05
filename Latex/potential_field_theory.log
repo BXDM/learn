@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.24)  8 JAN 2019 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.17)  12 APR 2019 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,7 +984,7 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  16289 strings out of 492649
- 315721 string characters out of 6133383
+ 315721 string characters out of 6133384
  326408 words of memory out of 5000000
  19689 multiletter control sequences out of 15000+600000
  577532 words of font info for 200 fonts, out of 8000000 for 9000
@@ -1040,7 +1040,7 @@ sfonts/cm/cmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msl10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texli
 ve/2018/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
-Output written on potential_field_theory.pdf (6 pages, 350822 bytes).
+Output written on potential_field_theory.pdf (6 pages, 350810 bytes).
 PDF statistics:
  541 PDF objects out of 1000 (max. 8388607)
  362 compressed objects within 4 object streams

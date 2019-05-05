@@ -1,0 +1,2 @@
+最小二乘法拟合	least_square_method
+曲线拟合			curve-fitting

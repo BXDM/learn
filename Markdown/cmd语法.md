@@ -6,7 +6,7 @@
 
 #### 一、基本命令
 
-**copy**
+##### **copy**
 
 ```
 copy 文件a + 文件b
@@ -14,7 +14,8 @@ copy 文件a + 文件b
 
 将文件a和文件b合并，合并到a上。
 
-**dir**
+##### **dir**
+
  `dir /s /b /a-d` 显示文件夹以及子文件夹下的文件
 `/s`  显示文件和子文件下的文件    `/b`不显示文件和摘要     `/a d`    只显示目录   `/a -d` 不显示目录，只显示文件
 
@@ -73,13 +74,17 @@ dir /s /b /ad>b.txt
 版权声明：本文为博主原创文章，转载请附上博文链接！
 ```
 
-**start**
+##### **start**
 
 打开新终端
 
+##### **move**
+
+移动
+
 #### 二、高级命令
 
-##### （一）set
+##### set
 
 ###### 1.变量读入
 
@@ -134,6 +139,7 @@ pause
 运行显示：
 替换前的值: "bbs.verybat.cn"
 替换后的值: "bbs 伤脑筋 verybat 伤脑筋 cn"
+```
 
 解释“set var=%a:.=伤脑筋% ”，a 是要进行字符替换的变量,"."为 要替换的值, "伤脑筋"为替换后的值， 执行后就会把变量%a%里面 的"."全部替换为"伤脑筋"。
 
@@ -153,9 +159,6 @@ Pause>Nul
 ::后面的依次类推
 
 ```
-
-
-
 #### 三、批处理for语句
 
 ##### （一）、for语句的基本用法
@@ -225,6 +228,17 @@ x——起始值
 y——步长
 y——终止值 (不能取0）
 
+创建一系列文件
+
+```
+@echo off 
+md text
+rem cd text
+for /l %%i in (1,2,20) do cd.> text\%%i.txt
+```
+
+
+
 
 
 ##### （五）、FOR变量
@@ -259,16 +273,16 @@ for /R %FIND_DIR% %%f in (*.txt) do (
 
     SET FILE_DIR=%%~dpf
     ECHO 所在的目录: !FILE_DIR!
-
+    
     SET FILE_NAME=%%~nf
     ECHO 无后缀文件: !FILE_NAME!
-
+    
     SET FILE_EXT=%%~xf
     ECHO 文件名后缀: !FILE_EXT!
-
+    
     SET "FILE_NAME_NOT_PATH=%%~nxf"
     ECHO 无路径文件: !FILE_NAME_NOT_PATH!
-
+    
     SET "FULL_PATH_NOT_EXT=%%~dpnf"
     ECHO 无后缀全名: !FULL_PATH_NOT_EXT!
 )
@@ -308,3 +322,7 @@ pause
 
 
 
+
+```
+
+```

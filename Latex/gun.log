@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.24)  7 MAR 2019 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.13)  13 MAR 2019 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -77,7 +77,7 @@ type `show w'.[]
 [15] [16] (./gun.aux) ) 
 Here is how much of TeX's memory you used:
  254 strings out of 492649
- 2800 string characters out of 6133383
+ 2800 string characters out of 6133384
  63909 words of memory out of 5000000
  4206 multiletter control sequences out of 15000+600000
  8773 words of font info for 32 fonts, out of 8000000 for 9000

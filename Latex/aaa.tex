@@ -1,8 +1,33 @@
 \documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}    % loads »amsmath«
 
 \title{位场理论}
 \author{北巷的猫}
 \begin{document}
 \maketitle           %生成title
 北巷的猫
+
+   Maxwell's equations (Differential Form):
+   \begin{subequations}
+     \begin{alignat}{2}
+       \mathllap{\text{高斯定理}\qquad} && \nabla \times \emph{\textbf{H}} &=\sigma \emph{\textbf{E}} + \varepsilon   \frac{\partial\emph{\textbf{E}}}{\partial t} \\
+       \mathllap{\text{高斯定理}\qquad} && \nabla \times \emph{\textbf{E}} &=-\mu  \frac{\partial\emph{\textbf{H}}}{\partial t} \\
+       \mathllap{\text{法拉第定律}\qquad} && \nabla \cdot \emph{\textbf{H}} &=0 \\
+       \mathllap{\text{安培定理}\qquad} && \nabla \cdot \emph{\textbf{E}} &=0
+     \end{alignat}
+   \end{subequations}
+
+北巷的猫$\vec{n}$,$h_A$
+ Maxwell's equations (Differential Form):
+   \begin{subequations}
+     \begin{alignat}{2}
+       \nabla \times \emph{\textbf{H}}=\sigma \emph{\textbf{E}} + \varepsilon   \frac{\partial\emph{\textbf{E}}}{\partial t} \\
+        \nabla \times \emph{\textbf{E}}=-\mu  \frac{\partial\emph{\textbf{H}}}{\partial t} \\
+        \nabla \cdot \emph{\textbf{H}}=0 \\
+        \nabla \cdot \emph{\textbf{E}}=0
+     \end{alignat}
+   \end{subequations}
+
 \end{document}

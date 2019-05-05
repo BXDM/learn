@@ -1,5 +1,5 @@
 SyncTeX Version:1
-Input:1:F:/文本文件/代码文件/Latex/./potential_field_theory.tex
+Input:1:F:/Code/Latex/./potential_field_theory.tex
 Input:2:c:/texlive/2018/texmf-dist/tex/latex/ctex/ctexart.cls
 Input:3:c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
 Input:4:c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
@@ -55,7 +55,7 @@ Input:53:c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 Input:54:c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 Input:55:c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 Input:56:c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-Input:57:F:/文本文件/代码文件/Latex/./potential_field_theory.aux
+Input:57:F:/Code/Latex/./potential_field_theory.aux
 Input:58:c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Input:59:c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Input:60:c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
@@ -80,7 +80,7 @@ Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!5244
+!5218
 {1
 [1,11:4736286,46220574:26673152,41484288,0
 [1,11:8799518,46220574:22609920,40435712,0
@@ -142,21 +142,21 @@ g1,9:22076456,14361125
 k1,9:31409438,14361125:9332982
 )
 (1,9:8799518,16129341:22609920,631504,78938
-k1,9:17116913,16129341:8317395
-h1,9:17116913,16129341:0,0,0
-x1,9:18662765,16129341
-g1,9:18920407,16129341
-x1,9:19709788,16129341
-g1,9:19967430,16129341
-x1,9:20353893,16129341
-g1,9:20611535,16129341
-x1,9:21400916,16129341
-g1,9:21658558,16129341
-x1,9:22045021,16129341
-g1,9:22302663,16129341
-x1,9:23092044,16129341
-g1,9:23092044,16129341
-k1,9:31409438,16129341:8317394
+k1,9:16923681,16129341:8124163
+h1,9:16923681,16129341:0,0,0
+x1,9:18469533,16129341
+g1,9:18727175,16129341
+x1,9:19516556,16129341
+g1,9:19774198,16129341
+x1,9:20160661,16129341
+g1,9:20418303,16129341
+x1,9:21207684,16129341
+g1,9:21465326,16129341
+x1,9:22238252,16129341
+g1,9:22495894,16129341
+x1,9:23285275,16129341
+g1,9:23285275,16129341
+k1,9:31409438,16129341:8124163
 )
 ]
 (1,11:8799518,46220574:22609920,445122,0
@@ -170,8 +170,8 @@ k1,11:31409438,46220574:11132282
 ]
 !2055
 }1
-Input:76:F:/文本文件/代码文件/Latex/./potential_field_theory.toc
-!74
+Input:76:F:/Code/Latex/./potential_field_theory.toc
+!61
 {2
 [1,13:4736286,46220574:26673152,41484288,0
 [1,13:8799518,46220574:22609920,40435712,0
@@ -5556,8 +5556,8 @@ h1,79:8799518,46220574:22609920,0,0
 ]
 !25087
 }4
-Input:78:F:/文本文件/代码文件/Latex/./potential_field_theory.bbl
-!75
+Input:78:F:/Code/Latex/./potential_field_theory.bbl
+!62
 {5
 [78,8:4736286,46220574:26673152,41484288,0
 [78,8:8799518,46220574:22609920,40435712,0
@@ -6436,8 +6436,8 @@ h1,125:8799518,46220574:22609920,0,0
 ]
 !4945
 }6
-Input:79:F:/文本文件/代码文件/Latex/./potential_field_theory.aux
-!74
+Input:79:F:/Code/Latex/./potential_field_theory.aux
+!61
 Postamble:
 Count:4830
 !26

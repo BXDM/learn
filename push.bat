@@ -2,5 +2,5 @@ git add -A
 
 git commit -m update
 
-git push learn master Latex
+git push backup
 wait
